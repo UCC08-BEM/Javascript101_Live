@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript 101</title>
+
+
+
+</head>
+<body>
+    <!-- Donuk HTML sayfalarını dinamikleştiren özellikler ekliyor -->
+    <!-- 2türlü kullanım var...inline diğeri de harici  -->
+    <!-- Not : eğer sayfaların daha hızlı açılması isteniyorsa script blokları son body etiketinin üzerinde tanımlanır. -->
+
+    <h1>Javascript dünyasına hoşgeldiniz...</h1>
+    <br />
+    <br />
+    <p id="lorem">Lorem ipsum dolor sit amet....</p>
+
+
+
+
+
+    <!-- Javascript kısmı -->
+
+    <script>
+// tek satırlık açıklama satırı
+/* çok satırlı açıklama satırları
+...
+...
+*/
+        document.write("Hello world..."); // ; ile bitecek
+        document.write("<br/><br/>");
+        document.write("Merhaba dünya...");
+        document.write("<br/><br/>");
+
+        // kurallara bağlı bir dil
+        // ;
+        // değişgen tanımlama
+        var x = 0, y, toplam = 0;
+
+        x = x + 1;
+
+        toplam = toplam + x;
+
+        document.write("Toplam sonucu = " + toplam);
+
+    </script>
+
+    <script>
+        // Bloklardan oluşan bir yapıya sahiptir.
+        function topla()
+        { // blok başlangıcı
+            var x, y;
+            var toplam;
+
+            x = 1;
+            y = 5;
+            toplam = x + y;
+
+            document.writeln("Toplam sonucu = " + toplam);
+
+
+        } // blok sonu
+
+    </script>
+
+    <script>
+// Büyük-küçük harf duyarlıdır. yani x ile X birbirinden farklı
+        var x;
+        var X;
+
+        x = 5; X = 15;
+
+        document.writeln("x : " + x);
+        document.writeln("X : " + X);
+    </script>
+
+    <script>
+// showmessage gibi
+        alert("Bu bir mesajdır...");
+
+    </script>
+
+    <script>
+// Javascript tarafından ekrandaki HTML elemanlarına erişim yapılabilir (innerHTML)
+        var icerik;
+
+        document.write("<br/><br/>");
+        icerik = document.getElementById("lorem").innerHTML;
+
+        document.write(icerik);
+
+    </script>
+
+    <script>
+        var content;
+
+        content = "Deneme....Deneme";
+
+        // soru : yukarda gözüken p tagının içeriğni değişgenimin değeriyle değiştirme nasıl olur..
+
+        document.getElementById("lorem").innerHTML = content;
+
+
+
+
+    </script>
+
+
+</body>
+</html>

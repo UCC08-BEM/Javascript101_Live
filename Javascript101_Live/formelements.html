@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form elements</title>
+
+    <script src="scripts/formelements.js"></script>
+
+
+
+
+</head>
+<body>
+    <!-- tbox1 in içeriğini yazma butona basınca -->
+    <input id="tbox1" type="text" /><br />
+    <input id="Button1" type="button" value="İçeriği yaz" onclick="tboxWrite()" />&nbsp;&nbsp;<br /><b id="sonuc1"></b>  <br /><br />
+    <!-- tbox2 nin içeriğini artırma butona basınca -->
+    <input id="tbox2" type="text" /><br />
+    <input id="Button2" type="button" value="Artır..." onclick="artir()" /><br /><br />
+    <input id="Button3" type="button" value="Azalt..." onclick="azalt()" />
+
+    <input id="Button4" type="button" value="Tablo Çiz" onclick="tabloCiz()" />
+
+    <p id="sonuc2"> <!-- Tablonun yerleşeceği bölüm -->
+
+    </p>
+
+    <!-- Ekranda bir buton olsun...basınca ekrana 200px genişliğinde 2 kolon 2 satır olacak şekilde bir tablo çizsin. tablonun geriplan rengi de gainsboro renginde olursa dadından yenmez olur.-->
+    
+    <!-- table için standard html taglarından yararlanılabilir. copy-paste yaparaktan uzun uzun uğrasmadan...-->
+
+
+    <!-- Ekrandan alınan iki sayıyı carpan ve sonucu 3.bir html textbox(tbox5) içine yazan javascript fonksiyonunu yazınız...Bunun için tamamen ayrı bir javascript harici dosyası kullanabilirsiniz.-->
+
+    <input id="tbox3" type="text" /><br /><br />
+    <input id="tbox4" type="text" /><br />
+    <input id="Button11" type="button" value="Çarpma yap" onclick="carp()" />
+    <input id="tbox5" type="text" /><br />
+</body>
+</html>
